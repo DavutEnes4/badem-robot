@@ -8,6 +8,10 @@ class KeyboardListenerSubscriber(Node):
     def __init__(self):
         super().__init__('keyboard_listener_subscriber')
         self.get_logger().info("Keyboard listener subscriber initialized.")
+        
+        # Serial portu başlat
+        self.ser = serial.Serial('/dev/ttyUSB0', 115200)
+        
         self.subscription = self.create_subscription(
             String,  # Abone olunacak mesaj tipi
             'topic',  # Publisher'ın gönderdiği topic adı
@@ -19,10 +23,14 @@ class KeyboardListenerSubscriber(Node):
     def listener_callback(self, msg):
         # Abone olunduğunda gelen mesajı işleyin
         self.get_logger().info(f'Received: {msg.data}')
-        ser = serial.Serial('/dev/ttyUSB0', 9600)
-        ser.write(msg.data.encode())  # Gelen mesajı yaz
-        ser.close()
+        # Gelen mesajı byte dizisine çevirip seri porta yaz
+        self.ser.write(msg.data.encode('utf-8'))  # 'msg.data' stringini byte dizisine çevir ve yaz
 
+    def destroy_node(self):
+        # Node kapanmadan önce serial portu kapat
+        if self.ser.is_open:
+            self.ser.close()
+        super().destroy_node()
 
 def main(args=None):
     rclpy.init(args=args)
