@@ -1,0 +1,17 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/keyboard_input/keyboard_input.egg-info/PKG-INFO
+../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt
+../../build/keyboard_input/keyboard_input.egg-info/dependency_links.txt
+../../build/keyboard_input/keyboard_input.egg-info/entry_points.txt
+../../build/keyboard_input/keyboard_input.egg-info/requires.txt
+../../build/keyboard_input/keyboard_input.egg-info/top_level.txt
+../../build/keyboard_input/keyboard_input.egg-info/zip-safe
+keyboard_input/__init__.py
+keyboard_input/get_keyboard_input.py
+resource/keyboard_input
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

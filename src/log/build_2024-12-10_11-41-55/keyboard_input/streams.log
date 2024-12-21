@@ -1,0 +1,38 @@
+[1.697s] Invoking command in '/home/badem-robot/ros2_ws/src/keyboard_input': PYTHONPATH=/home/badem-robot/ros2_ws/src/build/keyboard_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/keyboard_input build --build-base /home/badem-robot/ros2_ws/src/build/keyboard_input/build install --record /home/badem-robot/ros2_ws/src/build/keyboard_input/install.log --single-version-externally-managed install_data
+[2.175s] running egg_info
+[2.175s] creating ../build/keyboard_input/keyboard_input.egg-info
+[2.199s] writing ../build/keyboard_input/keyboard_input.egg-info/PKG-INFO
+[2.200s] writing dependency_links to ../build/keyboard_input/keyboard_input.egg-info/dependency_links.txt
+[2.200s] writing entry points to ../build/keyboard_input/keyboard_input.egg-info/entry_points.txt
+[2.200s] writing requirements to ../build/keyboard_input/keyboard_input.egg-info/requires.txt
+[2.200s] writing top-level names to ../build/keyboard_input/keyboard_input.egg-info/top_level.txt
+[2.200s] writing manifest file '../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+[2.286s] reading manifest file '../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+[2.286s] adding license file 'LICENSE'
+[2.288s] writing manifest file '../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+[2.288s] running build
+[2.289s] running build_py
+[2.289s] creating /home/badem-robot/ros2_ws/src/build/keyboard_input/build
+[2.289s] creating /home/badem-robot/ros2_ws/src/build/keyboard_input/build/lib
+[2.289s] creating /home/badem-robot/ros2_ws/src/build/keyboard_input/build/lib/keyboard_input
+[2.290s] copying keyboard_input/get_keyboard_input.py -> /home/badem-robot/ros2_ws/src/build/keyboard_input/build/lib/keyboard_input
+[2.290s] copying keyboard_input/__init__.py -> /home/badem-robot/ros2_ws/src/build/keyboard_input/build/lib/keyboard_input
+[2.290s] running install
+[2.311s] running install_lib
+[2.345s] creating /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages/keyboard_input
+[2.345s] copying /home/badem-robot/ros2_ws/src/build/keyboard_input/build/lib/keyboard_input/get_keyboard_input.py -> /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages/keyboard_input
+[2.345s] copying /home/badem-robot/ros2_ws/src/build/keyboard_input/build/lib/keyboard_input/__init__.py -> /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages/keyboard_input
+[2.346s] byte-compiling /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages/keyboard_input/get_keyboard_input.py to get_keyboard_input.cpython-312.pyc
+[2.347s] byte-compiling /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages/keyboard_input/__init__.py to __init__.cpython-312.pyc
+[2.347s] running install_data
+[2.347s] creating /home/badem-robot/ros2_ws/src/install/keyboard_input/share/ament_index
+[2.347s] creating /home/badem-robot/ros2_ws/src/install/keyboard_input/share/ament_index/resource_index
+[2.348s] creating /home/badem-robot/ros2_ws/src/install/keyboard_input/share/ament_index/resource_index/packages
+[2.348s] copying resource/keyboard_input -> /home/badem-robot/ros2_ws/src/install/keyboard_input/share/ament_index/resource_index/packages
+[2.348s] copying package.xml -> /home/badem-robot/ros2_ws/src/install/keyboard_input/share/keyboard_input
+[2.348s] running install_egg_info
+[2.375s] Copying ../build/keyboard_input/keyboard_input.egg-info to /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages/keyboard_input-0.0.0-py3.12.egg-info
+[2.376s] running install_scripts
+[2.613s] Installing get_keyboard_input script to /home/badem-robot/ros2_ws/src/install/keyboard_input/lib/keyboard_input
+[2.614s] writing list of installed files to '/home/badem-robot/ros2_ws/src/build/keyboard_input/install.log'
+[2.716s] Invoked command in '/home/badem-robot/ros2_ws/src/keyboard_input' returned '0': PYTHONPATH=/home/badem-robot/ros2_ws/src/build/keyboard_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/badem-robot/ros2_ws/src/install/keyboard_input/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/keyboard_input build --build-base /home/badem-robot/ros2_ws/src/build/keyboard_input/build install --record /home/badem-robot/ros2_ws/src/build/keyboard_input/install.log --single-version-externally-managed install_data
