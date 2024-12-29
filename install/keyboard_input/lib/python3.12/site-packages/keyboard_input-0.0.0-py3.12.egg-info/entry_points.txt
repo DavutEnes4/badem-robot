@@ -1,2 +1,0 @@
-[console_scripts]
-get_keyboard_input = keyboard_input.get_keyboard_input:main
