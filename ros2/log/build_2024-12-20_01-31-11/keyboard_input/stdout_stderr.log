@@ -1,0 +1,37 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+creating ../../build/keyboard_input/keyboard_input.egg-info
+writing ../../build/keyboard_input/keyboard_input.egg-info/PKG-INFO
+writing dependency_links to ../../build/keyboard_input/keyboard_input.egg-info/dependency_links.txt
+writing entry points to ../../build/keyboard_input/keyboard_input.egg-info/entry_points.txt
+writing requirements to ../../build/keyboard_input/keyboard_input.egg-info/requires.txt
+writing top-level names to ../../build/keyboard_input/keyboard_input.egg-info/top_level.txt
+writing manifest file '../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+reading manifest file '../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+writing manifest file '../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/encoder/Belgeler/bademRobot/build/keyboard_input/build
+creating /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib
+creating /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input
+copying keyboard_input/__init__.py -> /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input
+copying keyboard_input/get_keyboard_input.py -> /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input
+running install
+running install_lib
+creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input
+copying /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input/__init__.py -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input
+copying /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input/get_keyboard_input.py -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input
+byte-compiling /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input/get_keyboard_input.py to get_keyboard_input.cpython-310.pyc
+running install_data
+creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index
+creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index/resource_index
+creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index/resource_index/packages
+copying resource/keyboard_input -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index/resource_index/packages
+copying package.xml -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/keyboard_input
+running install_egg_info
+Copying ../../build/keyboard_input/keyboard_input.egg-info to /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input-0.0.0-py3.10.egg-info
+running install_scripts
+Installing get_keyboard_input script to /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/keyboard_input
+writing list of installed files to '/home/encoder/Belgeler/bademRobot/build/keyboard_input/install.log'

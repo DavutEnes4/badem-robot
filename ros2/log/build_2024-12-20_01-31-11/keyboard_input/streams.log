@@ -1,0 +1,39 @@
+[0.311s] Invoking command in '/home/encoder/Belgeler/bademRobot/src/keyboard_input': PYTHONPATH=/home/encoder/Belgeler/bademRobot/build/keyboard_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_input build --build-base /home/encoder/Belgeler/bademRobot/build/keyboard_input/build install --record /home/encoder/Belgeler/bademRobot/build/keyboard_input/install.log --install-scripts $base/lib/keyboard_input --single-version-externally-managed install_data
+[0.422s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[0.422s]   warnings.warn(
+[0.426s] running egg_info
+[0.426s] creating ../../build/keyboard_input/keyboard_input.egg-info
+[0.427s] writing ../../build/keyboard_input/keyboard_input.egg-info/PKG-INFO
+[0.427s] writing dependency_links to ../../build/keyboard_input/keyboard_input.egg-info/dependency_links.txt
+[0.427s] writing entry points to ../../build/keyboard_input/keyboard_input.egg-info/entry_points.txt
+[0.427s] writing requirements to ../../build/keyboard_input/keyboard_input.egg-info/requires.txt
+[0.427s] writing top-level names to ../../build/keyboard_input/keyboard_input.egg-info/top_level.txt
+[0.427s] writing manifest file '../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+[0.428s] reading manifest file '../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+[0.428s] writing manifest file '../../build/keyboard_input/keyboard_input.egg-info/SOURCES.txt'
+[0.428s] running build
+[0.428s] running build_py
+[0.428s] creating /home/encoder/Belgeler/bademRobot/build/keyboard_input/build
+[0.428s] creating /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib
+[0.428s] creating /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input
+[0.428s] copying keyboard_input/__init__.py -> /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input
+[0.429s] copying keyboard_input/get_keyboard_input.py -> /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input
+[0.429s] running install
+[0.429s] running install_lib
+[0.429s] creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input
+[0.429s] copying /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input/__init__.py -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input
+[0.429s] copying /home/encoder/Belgeler/bademRobot/build/keyboard_input/build/lib/keyboard_input/get_keyboard_input.py -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input
+[0.429s] byte-compiling /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input/__init__.py to __init__.cpython-310.pyc
+[0.429s] byte-compiling /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input/get_keyboard_input.py to get_keyboard_input.cpython-310.pyc
+[0.430s] running install_data
+[0.430s] creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index
+[0.430s] creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index/resource_index
+[0.430s] creating /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index/resource_index/packages
+[0.430s] copying resource/keyboard_input -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/ament_index/resource_index/packages
+[0.430s] copying package.xml -> /home/encoder/Belgeler/bademRobot/install/keyboard_input/share/keyboard_input
+[0.430s] running install_egg_info
+[0.431s] Copying ../../build/keyboard_input/keyboard_input.egg-info to /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages/keyboard_input-0.0.0-py3.10.egg-info
+[0.431s] running install_scripts
+[0.444s] Installing get_keyboard_input script to /home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/keyboard_input
+[0.444s] writing list of installed files to '/home/encoder/Belgeler/bademRobot/build/keyboard_input/install.log'
+[0.461s] Invoked command in '/home/encoder/Belgeler/bademRobot/src/keyboard_input' returned '0': PYTHONPATH=/home/encoder/Belgeler/bademRobot/build/keyboard_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/encoder/Belgeler/bademRobot/install/keyboard_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/keyboard_input build --build-base /home/encoder/Belgeler/bademRobot/build/keyboard_input/build install --record /home/encoder/Belgeler/bademRobot/build/keyboard_input/install.log --install-scripts $base/lib/keyboard_input --single-version-externally-managed install_data
