@@ -4,72 +4,74 @@
 #include <Arduino.h>
 
 /**
- * @brief Motor class
+ * @class step_motor
+ * @brief Motorun kontrolünü sağlayan sınıf.
  *
- *  Bu sınıf motor kontrollerini sağlar.
+ * Bu sınıf motorun hareketi, hızı ve yönünü kontrol etmek için kullanılan fonksiyonları içerir.
  */
 class step_motor
 {
 private:
-    int enable_pin;              // Enable pin
-    int dir_pin;                 // Direction pin
-    int pwm_pin;                 // PWM pin
-    int step_period;             // Step period
-    int period;                  // Period
-    unsigned long previous_time; // Previous time
-    bool forward;                // Forward
+    int enable_pin;   ///< Motorun aktif olup olmadığını kontrol eden pin
+    int dir_pin;      ///< Motorun yönünü belirleyen pin
+    int pwm_pin;      ///< Motorun hızını ayarlayan PWM pin'i
+    int step_period;  ///< Adım periyodu, her adım arasında geçen süreyi belirler
+    unsigned long period; ///< Motorun çalışma periyodu
+    unsigned long previous_time; ///< Son işlem zamanını tutar
+    bool forward;     ///< Motorun ileri mi yoksa geri mi gittiğini belirtir
+
 public:
     /**
      * @brief Yeni bir step_motor nesnesi oluşturur
-     *
-     * Bu fonksiyon, step_motor nesnesinin başlatılması için gerekli parametreleri alır ve motorun çalışabilmesi için gerekli pinleri ve ayarları yapılandırır.
-     *
-     * @param enable_pin Motorun aktif olup olmayacağını kontrol eden pin.
-     * @param dir_pin Motorun yönünü belirleyen pin.
-     * @param pwm_pin Motorun hızını ayarlayan PWM pin'i.
-     * @param step_period Adım periyodu (her adım arasındaki süreyi belirler).
-     * @param period Motorun çalışma periyodu (gerekli motor frekansını belirler).
+     * 
+     * Motorun kontrolünü sağlamak için gerekli pinler ve parametrelerle motoru başlatır.
+     * 
+     * @param enable_pin Motorun aktif olup olmayacağını kontrol eden pin
+     * @param dir_pin Motorun yönünü belirleyen pin
+     * @param pwm_pin Motorun hızını ayarlayan PWM pin'i
+     * @param step_period Adım periyodu (her adım arasındaki süreyi belirler)
+     * @param period Motorun çalışma periyodu (gerekli motor frekansını belirler)
      */
-    step_motor(int enable_pin, int dir_pin, int pwm_pin, int step_period, int period);
-    
+    step_motor(int enable_pin, int dir_pin, int pwm_pin, int step_period, unsigned long period);
+
     /**
      * @brief Motoru çalıştırır
-     *
-     * Bu fonksiyon, motorun çalışmasını sağlar.
+     * 
+     * Bu fonksiyon motoru çalıştırarak adım adım hareket etmesini sağlar.
      */
     void move();
 
     /**
-     * @brief Motorun durmasını sağlar
-     *
-     * Bu fonksiyon, motorun durmasını sağlar.
+     * @brief Motoru durdurur
+     * 
+     * Motoru durduran fonksiyondur. PWM çıkışı durdurulur.
      */
     void stop();
 
     /**
      * @brief Motorun çalışıp çalışmadığını kontrol eder
-     *
-     * Bu fonksiyon, motorun çalışıp çalışmadığını kontrol eder.
-     *
-     * @return Motor çalışıyorsa true, çalışmıyorsa false.
+     * 
+     * Motor aktifse true döner, değilse false döner.
+     * 
+     * @return Motor çalışıyorsa true, çalışmıyorsa false döner
      */
     bool is_moving();
 
     /**
      * @brief Motorun hızını ayarlar
-     *
-     * Bu fonksiyon, motorun hızını ayarlar.
-     *
-     * @param period Motorun çalışma periyodu (gerekli motor frekansını belirler).
+     * 
+     * Motorun çalışma hızını belirleyen fonksiyondur.
+     * 
+     * @param new_period Yeni çalışma periyodu
      */
-    void set_speed(int new_period);
+    void set_speed(unsigned long new_period);
 
     /**
-     * @brief Motorun ileri veya geri gitmesini sağlar
-     *
-     * Bu fonksiyon, motorun ileri veya geri gitmesini sağlar.
-     *
-     * @param direction Motorun ileri gitmesi durumunda true, geri gitmesi durumunda false.
+     * @brief Motorun yönünü belirler
+     * 
+     * Motoru ileri veya geri yönlendirir.
+     * 
+     * @param direction Motorun yönü (true = ileri, false = geri)
      */
     void set_direction(bool direction);
 };

@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <STEP_MOTOR.h>
+#include "step_motor/STEP_MOTOR.h"
 
 #define motor_right_enable 23
 #define motor_right_dir_pin 25
@@ -10,6 +10,9 @@
 
 step_motor motor_right(motor_right_enable, motor_right_dir_pin, motor_right_pwm, 5, 20);
 step_motor motor_left(motor_left_enable, motor_left_dir_pin, motor_left_pwm, 5, 20);
+
+void fSerialRead();
+void fMotorMove();
 
 void setup()
 {
